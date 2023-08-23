@@ -1,0 +1,8 @@
+:root {
+    --text: #f0f0f0;
+    --bgGrey: #262626;
+    --theme: rgba(200, 100, 0, 0.75);
+    --blue: rgba(0, 0, 220, 0.75);
+    --lightBlue: rgba(0, 68, 227, 0.8);
+    --green : #00D023;
+}

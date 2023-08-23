@@ -1,0 +1,16 @@
+a{cursor: grab}
+
+.carouselImg{
+    border-radius: 1em;
+    width: 80vh;
+    height: calc(100vh - 96px);
+}
+
+h3{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+}

@@ -1,0 +1,70 @@
+.contact{
+    margin-bottom: 57.5px;
+    color: var(--text);
+}
+
+.paragrapheContact{
+    width: 470px;
+    margin: auto;
+    padding-bottom: 0;
+}
+
+.formContact{
+    padding: 0 0 8px 0;
+    width: 300px;
+    margin: auto;
+    border-radius: 0 0 1em 1em !important;
+    border: black 2px solid;
+    border-top: 0;
+}
+
+.call{
+    text-transform: uppercase;
+    font-size: 0.85em;
+    color: var(--green);
+    font-weight: 700;
+}
+
+.phone{
+    color: var(--green);
+    font-weight: 800;
+}
+
+.aroundLine{
+    position: absolute;
+    bottom: 10px;
+    left: -1px;
+    right: -0.5px;
+    top: 9px;
+    margin: auto;
+    z-index: -1;
+}
+
+.mailSent{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    background: var(--green);
+    padding: 100px;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+    color: white;
+    border-radius: 1em;
+}
+
+.mailNotSent{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    background-color: red;
+    padding: 15%;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    border-radius: 0.5em;
+
+}
+
+.hide{display: none}
