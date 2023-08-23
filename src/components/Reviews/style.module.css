@@ -1,0 +1,86 @@
+.reviews{color: var(--text)}
+
+.btnContainer{
+    color: var(--text);
+    font-size: 0.8em;
+    transition: 250ms linear;
+    padding: 1px 5px;
+    margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 550;
+    text-align: left;
+}
+
+.reviewBtn{background: var(--theme)}
+.reviewBtn:hover{
+    color: #000;
+    background: var(--green);
+    transition: 250ms linear;
+}
+
+.emailInput{
+    width: 183px;
+    background: var(--bgGrey);
+    color: var(--text);
+    border-right: none;
+    cursor: pointer;
+}
+.email{background: var(--bgGrey); border-left:none; cursor: pointer}
+.validEmail{background: var(--green)}
+.invalidEmail:hover{background: red}
+
+.hiddenButtons, .mail{display: none}
+
+
+.reviewGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 0 5px;
+    margin-bottom: 80px;
+}
+
+.reviewCell {
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+}
+
+.reviewHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6px;
+}
+
+.reviewComment {
+    margin-top: 10px;
+}
+  
+ul{list-style: none}
+
+.updatedAt{
+    color: grey;
+    position: absolute;
+    font-size: 0.8em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    bottom: 0;
+    right: 6px;
+}
+
+.shareReview{background: var(--theme)}
+.shareReview:hover{background: var(--green)}
+
+.retriveReview{background: var(--theme)}
+.retriveReview:hover{background: var(--green)}
+
+.video{
+    width: calc(100vw - 30px);
+    margin-bottom: 50px;
+}
+
+.pVideo{
+    max-width: 500px;
+    margin: auto;
+    padding: 15px;
+}

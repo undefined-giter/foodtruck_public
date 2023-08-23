@@ -1,0 +1,8 @@
+.landing{margin-bottom: 57.5px}
+
+.carousel{height: calc(100vh - 68px)}
+
+.menuLink{
+    cursor: pointer;
+    padding-top: 12px;
+}

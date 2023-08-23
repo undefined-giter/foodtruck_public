@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.161dab4d.css",
+    "main.js": "/static/js/main.437d7027.js",
+    "static/js/787.6296f3c0.chunk.js": "/static/js/787.6296f3c0.chunk.js",
+    "static/media/wrap_chiken.png": "/static/media/wrap_chiken.41fbc50e25212b4c0f3f.png",
+    "static/media/burritos.png": "/static/media/burritos.45b37e6d3bd31d5dfab5.png",
+    "static/media/burger.png": "/static/media/burger.6721860f728517fbec02.png",
+    "static/media/americain.png": "/static/media/americain.d6b1464222473ad89eb6.png",
+    "index.html": "/index.html",
+    "main.161dab4d.css.map": "/static/css/main.161dab4d.css.map",
+    "main.437d7027.js.map": "/static/js/main.437d7027.js.map",
+    "787.6296f3c0.chunk.js.map": "/static/js/787.6296f3c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.161dab4d.css",
+    "static/js/main.437d7027.js"
+  ]
+}

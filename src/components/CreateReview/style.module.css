@@ -1,0 +1,10 @@
+.reviews{
+    margin-bottom: 57.5px;
+    color: var(--text);
+}
+
+.formDiv{
+    width: 300px;
+    text-align: left;
+    margin: auto;
+}

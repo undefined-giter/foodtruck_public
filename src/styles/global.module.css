@@ -1,0 +1,99 @@
+.title {
+    font-family: 'Cormorant Garamond', serif;
+    cursor: default;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    padding-top: 48px;
+    color: #000;
+}
+
+/* contrasts */
+.paragrapheBox{
+    padding: 0 10px 8px 10px;
+    border-radius: 1em;
+    border: black 2px solid;
+}
+.base{background: rgba(0, 0, 0, 0.5);}
+.darker{background: rgba(0, 0, 0, 0.7);}
+.darkest{background: rgba(0, 0, 0, 0.9);}
+
+.form{
+    display: block;
+    flex-direction: column;
+    width: 225px;
+    margin: auto;
+    text-align: left;
+    padding: 0 0 10px 0;
+}
+
+.form input, .form button, .form textarea{
+    width: 225px;
+    background-color: var(--bgGrey);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.form input{
+    border-right: none;
+    border-left: none;
+}
+.form textarea{
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+label{
+    margin: 1em auto 0 auto;
+}
+
+.form input:focus{
+    outline: var(--green);
+}
+
+.inputOkay{
+    border-color: var(--green);
+    box-shadow: 0 0 5px var(--green);
+}
+.inputNotOkay{
+    border-color: red;
+    box-shadow: 0 0 2px red;
+}
+.errorP{
+    color: red;
+    font-size: 0.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    transform: translateY(-3px);
+}
+
+.username{margin-top: 0 !important}
+
+.errorMessage{transform: translateY(-9px);}
+
+.btn{
+    border: 0;
+    border-radius: 0.4em;
+    cursor: pointer;
+    transition: 400ms;
+    outline: solid #333 2px;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+
+    &:hover,
+    &:focus{
+        outline-offset: -2px;
+        outline-color: var(--green);
+    }
+}
+
+.deactivatedBtn:hover{
+    background-color: var(--bgGrey);
+    color: red;
+    outline: red;
+    box-shadow: 0 0 3px red;
+}
+.btnOk{color: var(--theme) !important}
+.btnSending{color: var(--theme)}

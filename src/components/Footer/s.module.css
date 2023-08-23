@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: var(--text);
+    background-color: var(--bgGrey);
+    padding: 1px 2% 2px 2%;
+    margin: auto auto -1em auto;
+}
+
+.left{text-align: left}
+
+.right{text-align: right}
+
+@media (max-width: 360px){
+    .footer{padding: 1px 1%}
+}

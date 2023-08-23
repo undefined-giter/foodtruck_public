@@ -1,0 +1,170 @@
+.title{
+    background-color: var(--theme);
+    border-radius: 0.8em 0.8em 0 0;
+    text-align: center;
+    color: var(--blue) !important;
+    padding: 0 !important;
+}
+
+h1{
+    margin: 0 !important;
+    font-size: 1.5em !important;
+}
+
+.menuTable{
+    color: var(--text);
+    background-color: var(--bgGrey);
+    align-items: center;
+    text-align: left;
+    border-radius: 1em;
+    width: 674px;
+    height: 565px  !important;
+    margin: 40px auto 15px auto;
+    z-index: 900;
+}
+
+.eye:hover{
+    color: var(--lightBlue) !important;
+}
+.eye{
+    font-size: 16px;
+    color: var(--blue);
+    transition: 350ms ease-in-out;
+    animation: fadeIt 6s ease-in-out 1;
+}
+@keyframes fadeIt {
+    0%{opacity: 0}
+    15%{opacity: 1}
+    30%{opacity: 0.33}
+    45%{opacity: 1}
+    60%{opacity: 0.33}
+    75%{opacity: 1}
+    90%{opacity: 0.66}
+    100%{opacity: 1}
+}
+
+table th{text-align: center}
+
+.bothSame{
+    vertical-align: top;
+    width: 400px;
+    margin: 0;
+}
+.colWrapsBurri{padding: 8px 0 8px 10px}
+.colBurgersAme{padding: 8px 10px 8px 0}
+
+.category{
+    text-transform: uppercase;
+    font-family: fantasy;
+    -webkit-text-stroke: 1px var(--theme);
+    text-stroke: 1px var(--theme);
+}
+
+
+:root {
+    --wrapBg: url('../../../public/img/menu/food/wrap_chiken.png');
+    --burritosBg: url('../../../public/img/menu/food/burritos.png');
+    --burgerBg: url('../../../public/img/menu/food/burger.png');
+    --americainBg: url('../../../public/img/menu/food/americain.png');
+}
+
+.foodBackground{position: relative}
+.foodBackground[data-background='wrapBg']::before{background-image: var(--wrapBg)}
+.foodBackground[data-background='burritosBg']::before{background-image: var(--burritosBg)}
+.foodBackground[data-background='burgerBg']::before{background-image: var(--burgerBg)}
+.foodBackground[data-background='americainBg']::before{background-image: var(--americainBg)}
+
+.foodBackground::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    opacity: 1;
+    animation: fadeBg 5s linear forwards;
+}
+@keyframes fadeBg {
+    0%{opacity: 1}
+    100%{opacity: 0.2}
+}
+.foodBackground {
+    transition: opacity 1s ease-in-out;
+}
+.wrapBg:before{
+    top: 16px;
+    transform: scale(0.85);
+}
+
+
+.name{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.details{color: var(--theme)}
+
+.alignTop{
+    vertical-align: top;
+    justify-items: center;
+}
+
+.encas{
+    padding-left: 4px;
+    text-align: center;
+}
+.chocolate{
+    transform: translateY(9px);
+    text-align: center;
+}
+
+.drinks{padding: 1px 0 0 16px}
+
+.sauces{
+    text-align: center;
+    padding: 0;
+    margin: 0 auto 20px auto;
+}
+
+.saucesList{
+    text-transform: uppercase;
+    font-style: italic;
+    opacity: 0.5;
+    font-family: fantasy;
+}
+
+.nonSelectable{pointer-events: none}
+
+.size{
+    height: 60px;
+    vertical-align: bottom;
+}
+.sizeLiptonic{
+    height: 50px;
+    vertical-align: bottom;
+}
+.sizeGlass{
+    height: 78px;
+    vertical-align: bottom;
+}
+.sizeBottle{
+    height: 100px;
+    vertical-align: bottom;
+}
+
+.dlFile {
+    color: var(--blue);
+    position: absolute;
+    bottom: 5px;
+    left: 48.7%;
+    z-index: 50;
+}
+.dlFile:hover{
+    color: var(--lightBlue);
+}
+/* TODO Améliorable en stopant au nombre d'animations à faire, plutôt qu'au temps en js*/
+.stopBounceFile{
+    animation: none !important;
+}

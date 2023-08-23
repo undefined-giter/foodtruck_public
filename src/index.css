@@ -1,0 +1,54 @@
+@import './styles/variables.module.css';
+
+html {
+  color: var(--text);
+  scroll-behavior: smooth;
+  text-align: center;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* Styles pour la barre de défilement WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bgGrey); /* Couleur de l'arrière-plan de la piste */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--theme); /* Couleur de la poignée de la barre de défilement */
+  border-radius: 4px; /* Bordure arrondie de la poignée */
+  scrollbar-color: var(--theme) var(--theme);
+}
