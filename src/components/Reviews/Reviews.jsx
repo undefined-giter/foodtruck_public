@@ -129,10 +129,7 @@ export const Reviews = () => {
         :
 
         <div>
-          <p className={`${s.pVideo} ${selectedClass}`}>Je vous présente cette petite vidéo explicative pour vous montrer ce que vous ne pourrez pas voir en tant qu'utilisateur<br />
-              Malgré mes tentatives mon VPS ne prend pas en charge le protocole SSL donc la présentation se fait à partir de localhost.<br />
-              Merci de votre compréhension.
-          </p><br />
+          <p className={`${s.pVideo} ${selectedClass}`}>Je vous présente cette petite vidéo démonstrative depuis localhost,<br />fonctionnant également depuis http.</p><br />
           <video controls className={s.video} >
               <source src={'/crud.mp4'} type="video/mp4" />
               Your browser does not support the video tag.
